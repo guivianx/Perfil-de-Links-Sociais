@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "Embed code bold";
+    src: url(../assets/fonts/static/Inter-Bold.ttf);
+}
+@font-face {
+    font-family: "Embed code semiBold";
+    src: url(../assets/fonts/static/Inter-SemiBold.ttf);
+}
+@font-face {
+    font-family: "Embed code regular";
+    src: url(../assets/fonts/static/Inter-Regular.ttf);
+}
+
+:root {
+    --font-embedCode-bold:"Embed code bold";
+    --font-embedCode-semiBold:"Embed code semiBold";
+    --font-embedCode-regular:"Embed code regular";
+    
+    --Branco: hsl(0, 0%, 100%);
+    --Cinza: hsl(0, 0%, 20%);
+    --Cinza-escuro: hsl(0, 0%, 12%);
+    --Preto: hsl(0, 0%, 8%);
+    --Verde: hsl(75, 94%, 57%);
+
+    --Tamanho-da-fonte-parágrafo: 1.4rem;
+}
+
+html {font-size: 62.5%;}
+
+body {
+    background-color: var(--Preto);
+    font-size: var(--Tamanho-da-fonte-parágrafo);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--Cinza-escuro);
+    max-width: 375px;
+    border-radius: 15px;
+    padding: 40px;
+    align-items: center;
+}
+
+main .info img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+main .info h2 {
+    font-family: var(--font-embedCode-bold);
+    color: var(--Branco);
+    margin-top: 15px;
+}
+
+main .info .cityFrom {
+    font-family: var(--font-embedCode-semiBold);
+    color: var(--Verde);
+    margin-top: 10px;
+}
+
+main .info p:nth-last-child(2) {
+    font-family: var(--font-embedCode-regular);
+    color: var(--Branco);
+}
+
+.linkRedes {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.linkRedes div {
+    margin-top: 15px;
+    background-color: var(--Cinza);   
+    padding: 15px;
+    border-radius: 6px;
+    font-family: var(--font-embedCode-semiBold);
+    color: var(--Branco);
+    transition: .3s;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+}
+
+.linkRedes div:hover{
+    background-color: var(--Verde);
+    color: var(--Preto);
+}
