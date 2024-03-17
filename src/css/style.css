@@ -41,7 +41,7 @@ main {
     margin: 0 auto;
     text-align: center;
     background-color: var(--Cinza-escuro);
-    max-width: 375px;
+    width: 400px;
     border-radius: 15px;
     padding: 40px;
     align-items: center;
